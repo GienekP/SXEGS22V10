@@ -1,0 +1,96 @@
+LISTING FOR LOGIC DESCRIPTION FILE: SXEGS22V10.pld                   Page 1
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Sun Oct 23 15:15:17 2022
+
+  1:Name     SXEGS22V10 ;
+  2:PartNo   00 ;
+  3:Date     2022-10-20 ;
+  4:Revision 01 ;
+  5:Designer GienekP ;
+  6:Company   ;
+  7:Assembly None ;
+  8:Location  ;
+  9:Device   p22v10;
+ 10:
+ 11:/* *************** INPUT PINS ******************** */
+ 12:PIN 1  = CLK;
+ 13:PIN 2  = D2;
+ 14:PIN 3  = D1;
+ 15:PIN 4  = D0;
+ 16:PIN 5  = RW;
+ 17:PIN 6  = nS5;
+ 18:PIN 7  = nS4;
+ 19:PIN 8  = D7;
+ 20:PIN 9  = D5;
+ 21:PIN 10 = D4;
+ 22:PIN 11 = D3;
+ 23:PIN 13 = PHI2;
+ 24:PIN 14 = nCCTL;
+ 25:
+ 26:/* *************** OUTPUT PINS ******************** */
+ 27:PIN  15 = RD45;
+ 28:PIN  16 = nCE;
+ 29:PIN  17 = A13;
+ 30:PIN  18 = A14;
+ 31:PIN  19 = A15;
+ 32:PIN  20 = A17;
+ 33:PIN  21 = A16;
+ 34:PIN  22 = A18;
+ 35:PIN  23 = nPHI2;
+ 36:
+ 37:/* ****************** LOGIC *********************** */
+ 38:nPHI2  = !PHI2;
+ 39:nRW    = ( !RW );
+ 40:nCE    = ( ( nS4 & nS5 ) # nRW );
+ 41:trig   = ( ( !nCCTL ) & nRW  );
+ 42:
+ 43:RD45.D  = !( ( trig & D7 ) # ( ( !trig ) & ( !RD45 ) ) );
+ 44:RD45.ar = 'b'0;
+ 45:RD45.sp = 'b'0;
+ 46:RD45.OE = 'b'1;
+ 47:
+ 48:A13.D  = ( ( trig & D0 ) # ( ( !trig ) & A13 ) );
+ 49:A14.D  = ( ( trig & D1 ) # ( ( !trig ) & A14 ) );
+ 50:A15.D  = ( ( trig & D2 ) # ( ( !trig ) & A15 ) );
+ 51:A16.D  = ( ( trig & D3 ) # ( ( !trig ) & A16 ) );
+ 52:A17.D  = ( ( trig & D4 ) # ( ( !trig ) & A17 ) );
+ 53:A18.D  = ( ( trig & D5 ) # ( ( !trig ) & A18 ) );
+
+LISTING FOR LOGIC DESCRIPTION FILE: SXEGS22V10.pld                   Page 2
+
+CUPL(WM): Universal Compiler for Programmable Logic
+Version 5.0a Serial# 60008009
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+Created Sun Oct 23 15:15:17 2022
+
+ 54:
+ 55:A13.ar = 'b'0;
+ 56:A14.ar = 'b'0;
+ 57:A15.ar = 'b'0;
+ 58:A16.ar = 'b'0;
+ 59:A17.ar = 'b'0;
+ 60:A18.ar = 'b'0;
+ 61:
+ 62:A13.sp = 'b'0;
+ 63:A14.sp = 'b'0;
+ 64:A15.sp = 'b'0;
+ 65:A16.sp = 'b'0;
+ 66:A17.sp = 'b'0;
+ 67:A18.sp = 'b'0;
+ 68:
+ 69:A13.OE = !nS4;
+ 70:A14.OE = !nS4;
+ 71:A15.OE = !nS4;
+ 72:A16.OE = !nS4;
+ 73:A17.OE = !nS4;
+ 74:A18.OE = !nS4;
+ 75:
+ 76:
+
+
+
+Jedec Fuse Checksum       (ad7f)
+Jedec Transmit Checksum   (0b39)

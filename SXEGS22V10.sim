@@ -1,0 +1,138 @@
+%SIGNAL
+PIN  17 =  A13 
+PIN  18 =  A14 
+PIN  19 =  A15 
+PIN  21 =  A16 
+PIN  20 =  A17 
+PIN  22 =  A18 
+PIN   1 =  CLK 
+PIN   4 =  D0 
+PIN   3 =  D1 
+PIN   2 =  D2 
+PIN  11 =  D3 
+PIN  10 =  D4 
+PIN   9 =  D5 
+PIN   8 =  D7 
+PIN  13 =  PHI2 
+PIN  15 =  RD45 
+PIN   5 =  RW 
+PIN  14 =  nCCTL 
+PIN  16 =  nCE 
+PIN  23 =  nPHI2 
+PIN   7 =  nS4 
+PIN   6 =  nS5 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+A13.d  =>
+    D0 & !RW & !nCCTL
+  # !A13 & nCCTL
+  # !A13 & RW
+
+A13.ar A14.ar A15.ar A16.ar A17.ar A18.ar RD45.ar  =>
+    0 
+
+A13.oe  =>
+    !nS4
+
+A13.sp A14.sp A15.sp A16.sp A17.sp A18.sp RD45.sp  =>
+    0 
+
+A14.d  =>
+    D1 & !RW & !nCCTL
+  # !A14 & nCCTL
+  # !A14 & RW
+
+A14.ar  =>
+    
+A14.oe  =>
+    !nS4
+
+A14.sp  =>
+    
+A15.d  =>
+    D2 & !RW & !nCCTL
+  # !A15 & nCCTL
+  # !A15 & RW
+
+A15.ar  =>
+    
+A15.oe  =>
+    !nS4
+
+A15.sp  =>
+    
+A16.d  =>
+    D3 & !RW & !nCCTL
+  # !A16 & nCCTL
+  # !A16 & RW
+
+A16.ar  =>
+    
+A16.oe  =>
+    !nS4
+
+A16.sp  =>
+    
+A17.d  =>
+    D4 & !RW & !nCCTL
+  # !A17 & nCCTL
+  # !A17 & RW
+
+A17.ar  =>
+    
+A17.oe  =>
+    !nS4
+
+A17.sp  =>
+    
+A18.d  =>
+    D5 & !RW & !nCCTL
+  # !A18 & nCCTL
+  # !A18 & RW
+
+A18.ar  =>
+    
+A18.oe  =>
+    !nS4
+
+A18.sp  =>
+    
+RD45.d  =>
+    D7 & !RW & !nCCTL
+  # !RD45 & nCCTL
+  # !RD45 & RW
+
+RD45.ar  =>
+    
+RD45.oe  =>
+    1 
+
+RD45.sp  =>
+    
+nCE =>
+    nS4 & nS5
+  # !RW
+
+nPHI2 =>
+    !PHI2
+
+nRW =>
+    !RW
+
+trig =>
+    !RW & !nCCTL
+
+nCCTL.oe  =>
+    0 
+
+nCE.oe  =>
+    1 
+
+nPHI2.oe  =>
+    1 
+
+%END

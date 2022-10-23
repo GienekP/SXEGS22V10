@@ -1,0 +1,40 @@
+CSIM(WM): CUPL Simulation Program
+Version 5.0a Serial# 
+Copyright (c) 1983, 1998 Logical Devices, Inc.
+CREATED Sun Oct 23 15:15:23 2022
+
+LISTING FOR SIMULATION FILE: SXEGS22V10.si
+
+   1: Name     SXEGS22V10;
+   2: PartNo   00;
+   3: Date     2022-10-20;
+   4: Revision 01;
+   5: Designer GienekP;
+   6: Company  ;
+   7: Assembly None;
+   8: Location ;
+   9: 
+  10: 
+  11: ORDER: PHI2, nPHI2, CLK, nS4, nS5, nCCTL, D0, D7, nCE, A13, D1, RD45, RW, A14; 
+  12: 
+  13: 
+
+=======================
+       n   n           
+      PP   C     R     
+      HHCnnC  nA D A   
+      IILSSTDDC1D4R1   
+      22K45L07E315W4   
+=======================
+0001: 0H1111ZZHZZH1Z
+0002: 1L0011ZZLLZH1L
+0003: 0H1011ZZLLZH1L
+0004: 1L0101ZZLZZH1Z
+0005: 0H1101ZZLZZH1Z
+0006: 1L011001HZ1H0Z
+0007: 0H111001HZ1L0Z
+0008: 1L011010HZ0L0Z
+0009: 0H111010HZ0H0Z
+0010: 1L0011ZZLHZH1L
+0011: 0H1011ZZLHZH1L
+0012: 1L0111ZZHZZH1Z

@@ -1,0 +1,26 @@
+Name     SXEGS22V10;
+PartNo   00;
+Date     2022-10-20;
+Revision 01;
+Designer GienekP;
+Company  ;
+Assembly None;
+Location ;
+
+
+ORDER: PHI2, nPHI2, CLK, nS4, nS5, nCCTL, D0, D7, nCE, A13, D1, RD45, RW, A14; 
+
+
+VECTORS:
+0*1111ZZ**Z*1*
+1*0011ZZ**Z*1*
+0*1011ZZ**Z*1*
+1*0101ZZ**Z*1*
+0*1101ZZ**Z*1*
+1*011001**1*0*
+0*111001**1*0*
+1*011010**0*0*
+0*111010**0*0*
+1*0011ZZ**Z*1*
+0*1011ZZ**Z*1*
+1*0111ZZ**Z*1*

@@ -1,0 +1,212 @@
+
+*******************************************************************************
+                                  SXEGS22V10
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          p22v10  Library DLIB-h-40-17
+Created         Sun Oct 23 15:15:17 2022
+Name            SXEGS22V10 
+Partno          00 
+Revision        01 
+Date            2022-10-20 
+Designer        GienekP 
+Company         
+Assembly        None 
+Location        
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+A13.d  =>
+    D0 & !RW & !nCCTL
+  # A13 & nCCTL
+  # A13 & RW
+
+A13.ar  =>
+    0 
+
+A13.oe  =>
+    !nS4
+
+A13.sp  =>
+    0 
+
+A14.d  =>
+    D1 & !RW & !nCCTL
+  # A14 & nCCTL
+  # A14 & RW
+
+A14.ar  =>
+    0 
+
+A14.oe  =>
+    !nS4
+
+A14.sp  =>
+    0 
+
+A15.d  =>
+    D2 & !RW & !nCCTL
+  # A15 & nCCTL
+  # A15 & RW
+
+A15.ar  =>
+    0 
+
+A15.oe  =>
+    !nS4
+
+A15.sp  =>
+    0 
+
+A16.d  =>
+    D3 & !RW & !nCCTL
+  # A16 & nCCTL
+  # A16 & RW
+
+A16.ar  =>
+    0 
+
+A16.oe  =>
+    !nS4
+
+A16.sp  =>
+    0 
+
+A17.d  =>
+    D4 & !RW & !nCCTL
+  # A17 & nCCTL
+  # A17 & RW
+
+A17.ar  =>
+    0 
+
+A17.oe  =>
+    !nS4
+
+A17.sp  =>
+    0 
+
+A18.d  =>
+    D5 & !RW & !nCCTL
+  # A18 & nCCTL
+  # A18 & RW
+
+A18.ar  =>
+    0 
+
+A18.oe  =>
+    !nS4
+
+A18.sp  =>
+    0 
+
+RD45.d  =>
+    D7 & !RW & !nCCTL
+  # !RD45 & nCCTL
+  # !RD45 & RW
+
+RD45.ar  =>
+    0 
+
+RD45.oe  =>
+    1 
+
+RD45.sp  =>
+    0 
+
+nCE =>
+    nS4 & nS5
+  # !RW
+
+nPHI2 =>
+    !PHI2
+
+nRW =>
+    !RW
+
+trig =>
+    !RW & !nCCTL
+
+nCCTL.oe  =>
+    0 
+
+nCE.oe  =>
+    1 
+
+nPHI2.oe  =>
+    1 
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min    
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level   
+--- --------            ---     ---     ----    ------  ------  -----   
+
+    A13                         17       V        -       -       -     
+    A13                 d       17       X        3       14      0     
+    A13                 ar      17       X        1       1       1     
+    A13                 oe      17       X        1       1       1     
+    A13                 sp      17       X        1       1       1     
+    A14                         18       V        -       -       -     
+    A14                 d       18       X        3       16      0     
+    A14                 ar      18       X        1       1       1     
+    A14                 oe      18       X        1       1       1     
+    A14                 sp      18       X        1       1       1     
+    A15                         19       V        -       -       -     
+    A15                 d       19       X        3       16      0     
+    A15                 ar      19       X        1       1       1     
+    A15                 oe      19       X        1       1       1     
+    A15                 sp      19       X        1       1       1     
+    A16                         21       V        -       -       -     
+    A16                 d       21       X        3       12      0     
+    A16                 ar      21       X        1       1       1     
+    A16                 oe      21       X        1       1       1     
+    A16                 sp      21       X        1       1       1     
+    A17                         20       V        -       -       -     
+    A17                 d       20       X        3       14      0     
+    A17                 ar      20       X        1       1       1     
+    A17                 oe      20       X        1       1       1     
+    A17                 sp      20       X        1       1       1     
+    A18                         22       V        -       -       -     
+    A18                 d       22       X        3       10      0     
+    A18                 ar      22       X        1       1       1     
+    A18                 oe      22       X        1       1       1     
+    A18                 sp      22       X        1       1       1     
+    CLK                         1        V        -       -       -     
+    D0                          4        V        -       -       -     
+    D1                          3        V        -       -       -     
+    D2                          2        V        -       -       -     
+    D3                          11       V        -       -       -     
+    D4                          10       V        -       -       -     
+    D5                          9        V        -       -       -     
+    D7                          8        V        -       -       -     
+    PHI2                        13       V        -       -       -     
+    RD45                        15       V        -       -       -     
+    RD45                d       15       X        3       10      0     
+    RD45                ar      15       X        1       1       1     
+    RD45                oe      15       X        1       1       1     
+    RD45                sp      15       X        1       1       1     
+    RW                          5        V        -       -       -     
+    nCCTL                       14       V        -       -       -     
+    nCE                         16       V        2       12      0     
+    nPHI2                       23       V        1       8       0     
+    nRW                         0        I        1       -       -     
+    nS4                         7        V        -       -       -     
+    nS5                         6        V        -       -       -     
+    trig                        0        I        1       -       -     
+    nCCTL               oe      14       D        1       1       0     
+    nCE                 oe      16       D        1       1       0     
+    nPHI2               oe      23       D        1       1       0     
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
